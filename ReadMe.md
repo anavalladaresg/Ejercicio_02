@@ -44,3 +44,17 @@ sudo docker inspect dam_alp1 | grep IPAddress
 ```bash
 sudo docker exec -it dam_alp1 ping www.google.com
 ```
+
+## 5. Crear otro contenedor llamado 'dam_alp2' y verificar la comunicación entre ambos
+Creamos un segundo contenedor denominado `dam_alp2`. Desde el terminal del primer contenedor `dam_alp1`, se intenta hacer ping al segundo contenedor utilizando su dirección IP interna, validando así la comunicación entre ellos.
+
+**Comandos utilizados:**
+```bash
+sudo docker run -it -d --name dam_alp2 alpine
+```
+```bash
+sudo docker exec -it dam_alp1 sh
+```
+```bash
+ping <IP_dam_alp2> # En mi caso, la IP es 172.17.0.3
+```
