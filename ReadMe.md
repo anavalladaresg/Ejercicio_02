@@ -22,3 +22,14 @@ sudo docker run -d alpine
 ```bash
 sudo docker ps -a
 ```
+
+## 3. Crear un contenedor con nombre 'dam_alp1' y acceder a su terminal
+Creamos un nuevo contenedor, esta vez asignándole el nombre `dam_alp1`. Nos conectamos a su terminal utilizando el comando exec, que nos permite interactuar directamente con el contenedor.
+
+**Comandos utilizados:**
+```bash
+sudo docker run -it -d --name dam_alp1 alpine
+```
+```bash
+sudo docker exec -it dam_alp1 sh
+```
