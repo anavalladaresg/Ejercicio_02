@@ -33,3 +33,14 @@ sudo docker run -it -d --name dam_alp1 alpine
 ```bash
 sudo docker exec -it dam_alp1 sh
 ```
+
+## 4. Obtener la IP del contenedor 'dam_alp1' y comprobar su conectividad a Internet
+Inspeccionamos el contenedor para averiguar su dirección IP interna. Verificamos si el contenedor tiene acceso a Internet mediante un ping a Google.
+
+**Comandos utilizados:**
+```bash
+sudo docker inspect dam_alp1 | grep IPAddress
+```
+```bash
+sudo docker exec -it dam_alp1 ping www.google.com
+```
