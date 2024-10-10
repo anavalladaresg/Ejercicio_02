@@ -58,3 +58,14 @@ sudo docker exec -it dam_alp1 sh
 ```bash
 ping <IP_dam_alp2> # En mi caso, la IP es 172.17.0.3
 ```
+
+## 6. Salir del terminal del contenedor. ¿Qué sucede con los contenedores?
+Al salir del terminal del contenedor, comprobamos si los contenedores siguen en ejecución mediante el comando `ps`. El resultado confirma que los contenedores permanecen activos.
+
+**Comandos utilizados:**
+```bash
+exit
+```
+```bash
+sudo docker ps -a
+```
