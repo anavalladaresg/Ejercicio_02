@@ -69,3 +69,12 @@ exit
 ```bash
 sudo docker ps -a
 ```
+
+## 7. Verificar el espacio en disco ocupado por los contenedores
+Verificamos cuánto espacio en disco han utilizado los contenedores tras haber sido ejecutados.
+
+**Comando utilizado:**
+```bash
+sudo docker ps -ls
+```
+*Resultado obtenido:* `Size: 0B (Virtual 7.8MB)`
