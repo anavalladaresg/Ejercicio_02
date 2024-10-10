@@ -78,3 +78,12 @@ Verificamos cuánto espacio en disco han utilizado los contenedores tras haber s
 sudo docker ps -ls
 ```
 *Resultado obtenido:* `Size: 0B (Virtual 7.8MB)`
+
+## 8. Consultar el uso de RAM por los contenedores y explorar un comando para monitorizar esto
+Consultamos el uso de memoria RAM de los contenedores con el comando `docker stats`, el cual nos proporciona estadísticas en tiempo real sobre el rendimiento de los contenedores.
+
+**Comando utilizado:**
+```bash
+sudo docker stats
+```
+*Resultado obtenido:* `dam_alp1: 516KiB / dam_alp2: 488KiB`
